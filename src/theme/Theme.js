@@ -9,6 +9,14 @@ export const darkTheme = createTheme({
     },
     palette: {
       mode: 'dark',
+      background: {
+        primary: '#1f2326'
+      },
+      table: {
+        border:{
+          primary: '#fff'
+        }
+      }
     },
   });
 
@@ -21,5 +29,13 @@ export const darkTheme = createTheme({
     },
     palette: {
       mode: 'light',
+      background: {
+        primary: 'lightgray'
+      },
+      table: {
+        border:{
+          primary: '#cccccc'
+        }
+      }
     },
   })

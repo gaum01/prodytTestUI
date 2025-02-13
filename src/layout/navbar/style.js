@@ -10,5 +10,5 @@ export const navbarStyles = makeStyles((theme) => ({
     linkButton: {
         color: 'inherit',
         textDecoration: 'none', // Ensure underline
-    }
+    },
 }))
