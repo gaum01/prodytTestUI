@@ -18,8 +18,8 @@ export const MenuLayout = () => {
 
   return (
     <Box sx={{ display: 'flex' }}>
-      <Header open={open} handleDrawerOpen={handleDrawerOpen} />
-      <Navbar open={open} handleDrawerClose={handleDrawerClose} />
+      <Header open={open} handleDrawerOpen={handleDrawerOpen} handleDrawerClose={handleDrawerClose} />
+      <Navbar open={open} />
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <DrawerHeader />
         <RouterAfterLogin />

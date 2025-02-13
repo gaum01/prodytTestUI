@@ -1,8 +1,5 @@
 import React from 'react'
-import { useTheme } from '@mui/material/styles';
-import {Divider, ListItem, IconButton, ListItemButton, ListItemIcon, ListItemText, List} from '@mui/material';
-import MenuOpenIcon from '@mui/icons-material/MenuOpen';
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import {Divider, ListItem, ListItemButton, ListItemIcon, ListItemText, List} from '@mui/material';
 
 import { routeData } from '../../routes/RoutesWithLogin/constant';
 import { DrawerHeader, Drawer } from '../menu/style';
@@ -11,15 +8,10 @@ import { Link } from 'react-router-dom';
 
 const Navbar = (props) => {
   const {open, handleDrawerClose} = props
-  const theme = useTheme();
   const classes = navbarStyles();
   return (
     <Drawer variant="permanent" open={open}>
-        <DrawerHeader>
-          <IconButton onClick={handleDrawerClose}>
-            {theme.direction === 'rtl' ? <ChevronRightIcon /> : <MenuOpenIcon />}
-          </IconButton>
-        </DrawerHeader>
+        <DrawerHeader />
         <Divider />
         <div className={classes.mainDiv}>
           {/* Top Part */}
